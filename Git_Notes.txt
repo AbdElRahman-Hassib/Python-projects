@@ -1,0 +1,34 @@
+CMD Notes:
+cd 												To change directory
+mkdir											To make directory (create new folder)
+touch											To create a new file in active directory
+ls												To show files list in current directory
+			
+GIT Notes:			
+git init 										To initialize a new repo in the active directory
+git add filename     							To stage file
+git reset head filename							To unstage file 
+git restore --staged filename					Same as git reset bhead filename 
+git branch										To get all branches
+git branch branchname 							To create new branch
+git checkout branchname 						To chevckout the head to the branch
+git checkout -b branchname						To create and checkout to the branch
+git branch -d 									To delete branch
+git branch -m newbranchname 					To edit branch name
+gut remote -v									To get remote name
+git stash 										To store some staged files (after adding them)
+git stash pop (stash id)						To get my stored files
+git apply (stash id)							same as git pop but the stash file is not removed from stash list in apply
+git stash drop (stash id)						To delete a stash from stash list
+git stash list									To get list of stashes
+git stash show 									To show what is inside the stash
+git stash clear									To clear stash list
+git stash save "stash name"						To save the satsh with a message name
+git push (remote name)(branch name) 			 
+git push -u 									To pull before pushing
+git pull = git fetch + git merge			
+git clean -n 									To show filenames that will be cleaned
+git clean -f 									To clean all files
+git reset -hard (before last commit ID) 		To remove the last commit 
+												(make the head points at this specific commit so all the commits after it is removed)
+												
