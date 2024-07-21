@@ -11,7 +11,7 @@ git reset head filename							To unstage file
 git restore --staged filename					Same as git reset bhead filename 
 git branch										To get all branches
 git branch branchname 							To create new branch
-git checkout branchname 						To chevckout the head to the branch
+git checkout branchname 						To checkout the head to the branch
 git checkout -b branchname						To create and checkout to the branch
 git branch -d 									To delete branch
 git branch -m newbranchname 					To edit branch name
@@ -27,8 +27,11 @@ git stash save "stash name"						To save the satsh with a message name
 git push (remote name)(branch name) 			 
 git push -u 									To pull before pushing
 git pull = git fetch + git merge			
-git clean -n 									To show filenames that will be cleaned
-git clean -f 									To clean all files
-git reset -hard (before last commit ID) 		To remove the last commit 
+git clean -n 									To show filenames that will be cleaned (Dry run)
+git clean -f 									Force clean
+git clean -d									Clean new directories (Folders)
+git clean -x									To clean files that are in git ignore
+git clean -i 									To open menu to choose from it (clean , ask each, quit ,...)
+git reset --hard (before last commit ID) 		To remove the last commit 
 												(make the head points at this specific commit so all the commits after it is removed)
 												

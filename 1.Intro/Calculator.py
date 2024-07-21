@@ -4,9 +4,9 @@ print(type(num1),type(operation))
 if operation == "+":
     print(int(num1)+int(num2))
 elif operation == "-":
-    print(int(num1)-int(num2))
+     print(int(num1)-int(num2))
 elif operation == "*":
-    print(int(num1)*int(num2))
+     print(int(num1)*int(num2))
 elif operation == "/":
     print(int(num1)/int(num2))
 
