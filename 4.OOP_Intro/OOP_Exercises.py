@@ -44,10 +44,22 @@ class Editor:
 
              
 abcd=rectangle(5,2)
-print(abcd.area())
-print(abcd)
-print(str(abcd))
-print(abcd.__str__())
+xyzz=rectangle(5,3)
+mnlo=xyzz
+print(abcd is xyzz)
+print(abcd is mnlo)
+print(mnlo is xyzz)
+print(id(xyzz.area()))
+print(id(xyzz))
+print(mnlo.area())
+xyzz.length=10
+print(id(xyzz.area()))
+print(mnlo.area())
+print(id(xyzz))
+# print(abcd.area())
+# print(abcd)
+# print(str(abcd))
+# print(abcd.__str__())
 # m=circle(5)
 # print(m.area())
 # e=Editor()

@@ -17,3 +17,13 @@ because if we have globale and local variable ,thepriority is to use the local o
 we can initialize only the 3rd parameter by typing it's name = initial value
 Ex: def func(a=1,b=2,c=3):
 calling -> func(c=5) and here we don't have to respect order here
+
+->Mutable and immutable objects:
+when i create variable in the code and initialize it,there are two ways of these variable mutable and immutable.
+mutable variable is the variable that points to a certain address but i can change its value
+immutable like string and int when i create a variable  with for example initial value 1 it points to the memory address
+that carry this value but this address can't hold another value but the variable can point to another address
+
+->"IS" identity operator "IS" returns true if the two objects are pointing to the same address
+EX: x=6 , y=6  x is y -> True
+EX: x=employee("ahmed") ,y =employee("ahmed"), z=y ,,,, x is y -> False , y is z -> true
